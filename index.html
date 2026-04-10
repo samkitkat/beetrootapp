@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Beetroot App</title>
+  <style>
+    :root {
+      --bg: #FFF8F0;
+      --card: #ffffff;
+      --text: #7A6174;
+      --heading: #7E1836;
+      --muted: #9B9FB5;
+      --accent: #EE666A;
+      --accent-soft: #FFB6C1;
+      --line: #eadfda;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .card {
+      width: 100%;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 40px 28px;
+      box-shadow: 0 8px 30px rgba(122, 97, 116, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--heading);
+      font-size: 0.92rem;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1.08;
+      color: var(--heading);
+      font-weight: 700;
+    }
+
+    .sub {
+      max-width: 720px;
+      font-size: 1.08rem;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .feature h2 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      color: var(--heading);
+    }
+
+    .feature p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    button {
+      padding: 14px 18px;
+      border: 0;
+      border-radius: 12px;
+      background: var(--accent);
+      color: white;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.92;
+    }
+
+    .note {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    footer, 
+    a {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 720px) {
+      .card {
+        padding: 28px 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <div class="wrap">
+      <section class="card">
+        <div class="eyebrow">A softer way to track your cycle</div>
+        <h1>Your period app, without the clutter.</h1>
+        <p class="sub">
+          Beetroot app is designed to be a gentle space to log all your period moods in a completely private way.
+        </p>
+
+        <div class="grid">
+          <div class="feature">
+            <h2>Simple tracking</h2>
+            <p>Log the details that matter without making the experience overwhelming.</p>
+          </div>
+          <div class="feature">
+            <h2>Private by design</h2>
+            <p>Built around a more personal, low-pressure approach to cycle tracking.</p>
+          </div>
+          <div class="feature">
+            <h2>Journal-friendly</h2>
+            <p>Reflect on patterns, feelings, and changes over time in one calm place.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 16px;">
+            <iframe
+              src="https://beetrootapp.substack.com/embed"
+              style="
+                width: 100%;
+                height: 150px;
+                border: 1px solid #eadfda;
+                border-radius: 16px;
+                box-shadow: 0 8px 30px rgba(122, 97, 116, 0.08);
+              "
+              frameborder="0"
+              scrolling="no">
+            </iframe>
+          </div>
+
+        <p class="note">One email when the app launches — then your email is deleted.
+            Alternatively, you can follow on <a href="https://www.tiktok.com/@samarkitkat"> TikTok </a> or <a href="https://www.instagram.com/samkitkat_"> Instagram </a>  for updates 🩷 </p>
+
+        <footer>
+          Made with care by <a style="text-decoration: none;" href="https://www.samkitkat.com"> سمر </a>
+        </footer>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
